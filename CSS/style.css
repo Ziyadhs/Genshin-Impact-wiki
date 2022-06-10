@@ -1,15 +1,16 @@
-/* --------------- body --------------- */
+/* ------------------------------ body ------------------------------ */
 body {
     height: 100%;
     width: 100%;
     margin: 0%;
     font-family: serif;
+    color: #ffffff;
     background-image: url("../Media/starts.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-/* --------------- header --------------- */
+/* ------------------------------ header ------------------------------ */
 header {
     display: flex;
     align-items: center;
@@ -17,33 +18,40 @@ header {
     margin-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 header #logo {
     height: 120px;
     width: 270px;
     margin-right: 100px;
 }
+
 header nav a {
     margin-left: 15px;
     text-decoration: none;
     color: #5abbf1;
-    font-size: 25px;
+    font-size: 20px;
 }
+
 header nav a:hover {
     color: #2985d0;
     border-bottom: 2.5px solid #5abbf1;
 }
 
-/* --------------- main --------------- */
+/* ------------------------------ main ------------------------------ */
+
+/* ------- container ------- */
 .container {
     position: relative;
     max-width: 1000px;
     max-height: 600px;
     margin: 20px auto;
 }
+
 .container img {
     width: 1000px;
     height: 600px;
 }
+
 .container .content {
     position: absolute;
     bottom: 0;
@@ -51,5 +59,216 @@ header nav a:hover {
     max-width: 100%;
     padding: 10px;
     background: rgba(0, 0, 0, 0.35);
-    color: #ffffff;
+}
+
+/* ------- form in characters page ------- */
+#form {
+    position: relative;
+    width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+#option {
+    width: 100px;
+    color: #5abbf1;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#form input {
+    width: 100px;
+    color: #5abbf1;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#form input:hover {
+    color: #2985d0;
+    border-bottom: 2.5px solid #5abbf1;
+}
+
+#form button a {
+    text-decoration: none;
+    color: #5abbf1;
+}
+
+#form button {
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+#form button:hover {
+    color: #2985d0;
+    border-bottom: 2.5px solid #5abbf1;
+}
+
+/* ------- table in characters page ------- */
+table {
+    position: relative;
+    width: 1000px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+table img {
+    width: 50px;
+    height: 50px;
+}
+
+table caption img {
+    width: 20px;
+    height: 20px;
+}
+
+table th {
+    font-size: 20px;
+}
+
+table a {
+    text-decoration: none;
+    color: white;
+}
+
+#Traveler caption {
+    color: goldenrod;
+    font-size: 25px;
+}
+
+#Traveler tfoot tr:hover {
+    background-color: goldenrod;
+}
+
+
+#Pyro caption {
+    color: #fe6640;
+    font-size: 25px;
+}
+
+#Pyro tfoot tr:hover {
+    background-color: #fe6640;
+    /* color: black; */
+}
+
+#Cryo caption {
+    color: #75e9ea;
+    font-size: 25px;
+}
+
+#Cryo tfoot tr:hover {
+    background-color: #75e9ea;
+    /* color: black; */
+}
+
+#Hydro caption {
+    color: #00c0ff;
+    font-size: 25px;
+}
+
+#Hydro tfoot tr:hover {
+    background-color: #00c0ff;
+    /* color: black; */
+}
+
+#Electro caption {
+    color: #cc80ff;
+    font-size: 25px;
+}
+
+#Electro tfoot tr:hover {
+    background-color: #cc80ff;
+    /* color: black; */
+}
+
+#Geo caption {
+    color: #ffb00d;
+    font-size: 25px;
+}
+
+#Geo tfoot tr:hover {
+    background-color: #ffb00d;
+    /* color: black; */
+}
+
+#Anemo caption {
+    color: #33d7a0;
+    font-size: 25px;
+}
+
+#Anemo tfoot tr:hover {
+    background-color: #33d7a0;
+    /* color: black; */
+}
+
+#Dendro caption {
+    color: green;
+    font-size: 25px;
+}
+
+#Dendro tfoot tr:hover {
+    background-color: green;
+    /* color: black; */
+}
+
+/* --------------- in socail media &download page --------------- */
+.Social_Media_and_trailer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+video {
+    width: 1000px;
+    height: 600px;
+}
+
+.Social_Media_and_trailer li {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.Social_Media_and_trailer li ul,a {
+    list-style: none;
+    text-decoration: none;
+    color: #00c0ff;
+}
+
+.Social_Media_and_trailer li ul a:hover {
+    color: #2985d0;
+    border-bottom: 2.5px solid #5abbf1;
+}
+
+
+/* ------------------------------ footer ------------------------------ */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+footer li {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+footer a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #5abbf1;
+}
+
+footer a:hover {
+    color: #2985d0;
+    border-bottom: 2.5px solid #5abbf1;
 }
